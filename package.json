@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "start:dev":"node --watch index.js"
+     "build": "babel src --out-dir dist",
+    "start:dev": "node --watch index.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,10 @@
     "express": "^4.21.2",
     "mongoose": "^8.10.1",
     "ua-parser-js": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9"
   }
 }
